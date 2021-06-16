@@ -28,6 +28,7 @@ workflows:
   build-prod:
     jobs:
       - buildEcr:
+          <<: *contexts
           <<: *filter-masterOnly
 
 jobs:
