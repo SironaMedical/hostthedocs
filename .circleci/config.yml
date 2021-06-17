@@ -39,7 +39,7 @@ jobs:
         default: ${APP_NAME} # Set this as circleci env var
         type: string
       ecrTag:
-        default: ${CIRCLE_SHA1}
+              default: "latest"
         type: string
     <<: *machine-defaults
     steps:
